@@ -30,7 +30,7 @@ jsFIles.forEach((f, i) => {
 });
 
 
-client.login(botconfig.token);
+client.login(process.env.token);
 
 client.on("ready", async () => {
  
