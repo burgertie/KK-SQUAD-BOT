@@ -29,9 +29,6 @@ jsFIles.forEach((f, i) => {
 
 });
 
-
-client.login(process.env.token);
-
 client.on("ready", async () => {
  
     console.log(`${client.user.username} is online!`);
@@ -64,3 +61,5 @@ if(command === `${prefix}Hello`){
 }
 
 });
+
+client.login(process.env.token);
