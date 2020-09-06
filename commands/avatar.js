@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
             embed.setColor(0x8b0000);
             embed.setTimestamp();
             embed.setFooter(user.username);
-            embed.setImage(bot.users.cache.get(user.id).displayAvatarURL({size: 2048, dynamic: true}));
+            embed.setImage(client.users.cache.get(user.id).displayAvatarURL({size: 2048, dynamic: true}));
             message.channel.send(embed);
         }
     
